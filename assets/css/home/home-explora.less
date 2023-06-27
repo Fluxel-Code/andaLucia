@@ -1,0 +1,64 @@
+section#home-explora {
+  background-color: @beige;
+  padding-top: 121px;
+  padding-bottom: 82.06px;
+  .container-explora {
+    max-width: 1318px + (@p_container * 2);
+    margin: auto;
+    padding-left: @p_container;
+    padding-right: @p_container;
+
+    .header-explora {
+      .title-explora {
+        color: black;
+        line-height: 123.6px;
+        font-family: "Space Grotesk";
+        font-size: 103px;
+        font-weight: 500;
+        text-align: start;
+        //   font: normal normal medium 103px/124px Space Grotesk;
+      }
+
+      .btn-explora {
+        max-width: 200px;
+        height: 42.55px;
+        border-radius: 15px;
+        background-color: white;
+        padding: 9px 13px;
+        transition: 0.5s all;
+        border: 0;
+        display: flex;
+        align-items: center;
+        gap: 10.5px;
+        a {
+          display: block;
+          font-family: "Space Grotesk";
+          font-weight: bold;
+          font-size: 18px;
+          // font: normal normal bold 18px/36px Space Grotesk;
+          background-color: transparent;
+          //   height: 100%;
+          width: 100%;
+          text-decoration: none;
+          display: block;
+          color: black;
+        }
+
+        &:hover {
+          border: 0;
+          background-color: black;
+          a {
+            color: white;
+          }
+
+          svg {
+            fill: white;
+            line {
+              stroke: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
