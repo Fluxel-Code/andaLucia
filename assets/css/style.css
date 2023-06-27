@@ -1,0 +1,69 @@
+section#home-cabecera {
+  background-color: #bcff3b;
+  width: 100%;
+  height: 100vh;
+}
+section#home-cabecera .container-banner {
+  max-width: 1263px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+section#home-cabecera .container-banner .columnas-banner {
+  padding-top: 156px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 54.1px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  min-height: 466px;
+}
+@media screen and (max-width: 1186px) {
+  section#home-cabecera .container-banner .columnas-banner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+section#home-cabecera .container-banner .columnas-banner .content-titulos {
+  max-width: 643px;
+  width: 30%;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 1186px) {
+  section#home-cabecera .container-banner .columnas-banner .content-titulos {
+    width: 100%;
+    padding-left: 50px;
+  }
+}
+section#home-cabecera .container-banner .columnas-banner .content-titulos h1 {
+  font-family: "Space Grotesk";
+  font-size: 95px;
+  font-weight: 500;
+  line-height: 113%;
+}
+section#home-cabecera .container-banner .columnas-banner .content-titulos h1 .zonas-banner {
+  margin-top: 15px;
+}
+section#home-cabecera .container-banner .columnas-banner .content-titulos h1 .zonas-banner a {
+  font-weight: bold;
+  color: #000000;
+}
+section#home-cabecera .container-banner .columnas-banner .textos {
+  padding-right: 25px;
+  width: 30%;
+  max-width: 523px;
+}
+@media screen and (max-width: 1186px) {
+  section#home-cabecera .container-banner .columnas-banner .textos {
+    width: 100%;
+  }
+}
+section#home-cabecera .container-banner .columnas-banner .textos > p {
+  font-family: "Space Grotesk";
+  color: #000000;
+}
