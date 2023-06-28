@@ -242,7 +242,7 @@ section#home-eventos .container-event .info-noticias .column-one {
   height: 100%;
   width: 40%;
 }
-@media screen and (max-width: 977px) {
+@media screen and (max-width: 1000px) {
   section#home-eventos .container-event .info-noticias .column-one {
     display: none !important;
   }
@@ -508,4 +508,141 @@ section#home-texto .container-slider-home .texto > p > a::before {
   left: 0;
   right: 0;
   border-bottom: 3px solid black;
+}
+section#AND_shop .container {
+  max-width: 1360.08px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+section#AND_shop .container .content-col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 19.92px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 19.92px;
+}
+section#AND_shop .container .content-col .col.first .titulo {
+  margin: 0;
+  margin-bottom: 29px;
+  text-align: left;
+  font: normal normal medium 95px/133px Space Grotesk;
+  letter-spacing: 0px;
+  color: #000000;
+}
+section#AND_shop .container .content-col .col.second img {
+  width: 100%;
+}
+section#AND_shop .container .content-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15.83px;
+}
+section#AND_shop .container .content-btns .btn {
+  cursor: pointer;
+  border-radius: 10px;
+  opacity: 1;
+  font: normal normal normal;
+}
+section#AND_shop .container .content-btns .btn.black {
+  background: #000000 0% 0% no-repeat padding-box;
+  color: white;
+}
+section#AND_shop .container .content-btns .btn.green {
+  color: #000000;
+  background-color: #bcff3b !important;
+}
+section#AND_shop .container .content-products {
+  padding-top: 110px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 19.92px 1fr 19.92px 1fr 19.92px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 19.92px;
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  section#AND_shop .container .content-products {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 950px) {
+  section#AND_shop .container .content-products {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+section#AND_shop .container .content-products .card {
+  min-height: 391px;
+}
+@media screen and (max-width: 500px) {
+  section#AND_shop .container .content-products .card {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
+section#AND_shop .container .content-products .card .header {
+  width: 100%;
+  height: 302px;
+  background-color: #b3b2b288;
+  border-radius: 20px;
+  position: relative;
+}
+@media screen and (max-width: 500px) {
+  section#AND_shop .container .content-products .card .header {
+    height: 200px;
+  }
+}
+section#AND_shop .container .content-products .card .header .img-product {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+section#AND_shop .container .content-products .card .header .img-flotante {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+section#AND_shop .container .content-products .card .body {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+section#AND_shop .container .content-products .card .body .price {
+  margin: 0;
+  text-align: right;
+  font: normal normal bold 25px/35px Space Grotesk;
+  letter-spacing: 0px;
+  color: #000000;
+}
+section#AND_shop .container .content-products .card .body .name {
+  margin: 0;
+  text-align: left;
+  letter-spacing: 0px;
+  font-weight: medium;
+  font-family: "Space Grotesk";
+  font-size: 22px;
+  color: #000000;
+}
+@media screen and (min-width: 1200px) {
+  section#AND_shop .container .content-products .card.big {
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+  }
+  section#AND_shop .container .content-products .card.big .header {
+    height: 715.92px;
+  }
+  section#AND_shop .container .content-products .card.big .header .img-flotante {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
 }
