@@ -562,8 +562,27 @@ section#AND_shop .container .content-products {
   gap: 19.92px;
   width: 100%;
 }
+@media screen and (max-width: 1200px) {
+  section#AND_shop .container .content-products {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 950px) {
+  section#AND_shop .container .content-products {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 section#AND_shop .container .content-products .card {
   min-height: 391px;
+}
+@media screen and (max-width: 500px) {
+  section#AND_shop .container .content-products .card {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
 }
 section#AND_shop .container .content-products .card .header {
   width: 100%;
@@ -571,6 +590,11 @@ section#AND_shop .container .content-products .card .header {
   background-color: #b3b2b288;
   border-radius: 20px;
   position: relative;
+}
+@media screen and (max-width: 500px) {
+  section#AND_shop .container .content-products .card .header {
+    height: 200px;
+  }
 }
 section#AND_shop .container .content-products .card .header .img-product {
   width: 100%;
@@ -606,17 +630,19 @@ section#AND_shop .container .content-products .card .body .name {
   font-size: 22px;
   color: #000000;
 }
-section#AND_shop .container .content-products .card.big {
-  grid-column: auto / span 2;
-  grid-row: auto / span 2;
-}
-section#AND_shop .container .content-products .card.big .header {
-  height: 715.92px !important;
-}
-section#AND_shop .container .content-products .card.big .header .img-flotante {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+@media screen and (min-width: 1200px) {
+  section#AND_shop .container .content-products .card.big {
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+  }
+  section#AND_shop .container .content-products .card.big .header {
+    height: 715.92px;
+  }
+  section#AND_shop .container .content-products .card.big .header .img-flotante {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
 }
