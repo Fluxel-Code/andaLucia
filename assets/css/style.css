@@ -959,12 +959,24 @@ section#AND_shop .container .content-col {
   grid-template-columns: repeat(2, 1fr);
   gap: 19.92px;
 }
+@media screen and (max-width: 780px) {
+  section#AND_shop .container .content-col {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 section#AND_shop .container .content-col .col.first {
   padding-right: 50px;
 }
+@media screen and (max-width: 780px) {
+  section#AND_shop .container .content-col .col.first {
+    max-width: 500px;
+    padding-right: 0;
+  }
+}
 section#AND_shop .container .content-col .col.first .titulo-shop {
   line-height: 72px;
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 29px;
   text-align: left;
   font-family: "Space Grotesk";
@@ -984,7 +996,8 @@ section#AND_shop .container .content-col .col.first .titulo-shop {
 }
 @media screen and (max-width: 610px) {
   section#AND_shop .container .content-col .col.first .titulo-shop {
-    font-size: 40px;
+    font-size: 50px;
+    margin-bottom: 0;
   }
 }
 section#AND_shop .container .content-col .col.first .titulo-shop a {
@@ -1000,6 +1013,17 @@ section#AND_shop .container .content-col .col.first .subtitulo {
   letter-spacing: 0px;
   color: #000000;
 }
+@media screen and (max-width: 752px) {
+  section#AND_shop .container .content-col .col.first .subtitulo {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 780px) {
+  section#AND_shop .container .content-col .col.second {
+    display: none;
+  }
+}
 section#AND_shop .container .content-col .col.second img {
   width: 100%;
 }
@@ -1009,9 +1033,15 @@ section#AND_shop .container .content-btns {
   display: flex;
   gap: 15.83px;
 }
+@media screen and (max-width: 960px) {
+  section#AND_shop .container .content-btns {
+    margin-top: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 section#AND_shop .container .content-btns .btn {
   padding: 10px 30px;
-  min-width: 139px;
   min-height: 42px;
   background-color: #000000;
   color: white;
@@ -1024,6 +1054,9 @@ section#AND_shop .container .content-btns .btn {
   font-size: 25px;
   font-weight: normal;
 }
+section#AND_shop .container .content-btns .btn:hover {
+  border-color: transparent;
+}
 section#AND_shop .container .content-btns .btn.active {
   color: #000000;
   background-color: #bcff3b !important;
@@ -1034,7 +1067,7 @@ section#AND_shop .container .content-products {
   display: grid;
   -ms-grid-columns: 1fr 19.92px 1fr 19.92px 1fr 19.92px 1fr;
   grid-template-columns: repeat(4, 1fr);
-  gap: 19.92px;
+  gap: 30px 19.92px;
   width: 100%;
 }
 @media screen and (max-width: 1200px) {
@@ -1099,11 +1132,19 @@ section#AND_shop .container .content-products .card .body .price {
 section#AND_shop .container .content-products .card .body .name {
   margin: 0;
   text-align: left;
+  padding-right: 30px;
   letter-spacing: 0px;
+  line-height: 35px;
   font-weight: medium;
   font-family: "Space Grotesk";
-  font-size: 22px;
+  font-size: 25px;
   color: #000000;
+}
+@media screen and (max-width: 500px) {
+  section#AND_shop .container .content-products .card .body .name {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 @media screen and (min-width: 1200px) {
   section#AND_shop .container .content-products .card.big {
