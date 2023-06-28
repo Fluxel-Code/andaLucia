@@ -1,0 +1,188 @@
+section#home-eventos {
+  background-color: @verder;
+  padding-bottom: 82.06px;
+  padding-top: 121px;
+  @media screen and (max-width: 800px) {
+    padding-top: 15.5px;
+    padding-bottom: 42.03px;
+  }
+
+  .container-event {
+    max-width: 1318px + (@p_container * 2);
+    margin: auto;
+    padding-left: @p_container;
+    padding-right: @p_container;
+
+    .header-evento {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media screen and (max-width: 431px) {
+        flex-direction: column;
+        // gap: 50px;
+      }
+
+      .title-evento {
+        line-height: 123.6px;
+        font-family: "Space Grotesk";
+        font-size: 103px;
+        font-weight: 500;
+        text-align: start;
+        margin: 0;
+
+        @media screen and (max-width: 800px) {
+          font-size: 90px;
+        }
+        @media screen and (max-width: 752px) {
+          font-size: 70px;
+        }
+
+        @media screen and (max-width: 610px) {
+          font-size: 40px;
+        }
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+
+      .btn-evento {
+        min-width: 162px;
+        height: 42.55px;
+        border-radius: 15px;
+        background-color: white;
+        padding: 9px 13px;
+        transition: 0.5s all;
+        border: 0;
+        display: flex;
+        align-items: center;
+        gap: 10.5px;
+        @media screen and (max-width: 610px) {
+          height: 50px;
+        }
+
+        a {
+          display: block;
+          font-family: "Space Grotesk";
+          font-weight: bold;
+          font-size: 18px;
+          // font: normal normal bold 18px/36px Space Grotesk;
+          background-color: transparent;
+          width: 100%;
+          text-decoration: none;
+          display: block;
+          color: black;
+        }
+
+        &:hover {
+          border: 0;
+          background-color: black;
+          a {
+            color: white;
+          }
+
+          svg {
+            fill: white;
+            line {
+              stroke: black;
+            }
+          }
+        }
+      }
+    }
+
+    .info-noticias {
+      display: flex;
+      gap: 16px;
+      max-height: 538px;
+      .column-one {
+        height: 100%;
+        width: 40%;
+        // display: none;
+        @media screen and (max-width: 1000px) {
+          display: none !important;
+          //   width: 0;
+        }
+        .content-img {
+          max-width: 538px;
+          min-height: 330px;
+          border-radius: 85px;
+          background-color: @gris-img;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .column-two {
+        width: 60%;
+        @media screen and (max-width: 977px) {
+          width: 100%;
+        }
+        .lista {
+          display: flex;
+          gap: 17px;
+          flex-direction: column;
+          .item {
+            display: block;
+            text-decoration: none;
+            padding: 9px 20px 9px 30px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            transition: 0.5s all;
+            .textos {
+              p {
+                font-family: "Space Grotesk";
+                font-size: 35px;
+                font-weight: bold;
+                text-align: left;
+                line-height: 48px;
+                // font: normal normal bold 35px/48px Space Grotesk;
+                letter-spacing: 0px;
+                color: #000000;
+                margin: 0;
+              }
+
+              & > span {
+                margin: 0;
+                font-family: "Space Grotesk";
+                font-size: 35px;
+                font-weight: normal;
+                text-align: left;
+                line-height: 48px;
+                // font: normal normal bold 35px/48px Space Grotesk;
+                letter-spacing: 0px;
+                color: #000000;
+              }
+            }
+
+            .date > span {
+              font-family: "Space Grotesk";
+              font-size: 25px;
+              font-weight: normal;
+              text-align: right;
+              line-height: 48px;
+              // font: normal normal bold 35px/48px Space Grotesk;
+              letter-spacing: 0px;
+              color: #000000;
+            }
+
+            // &:hover {
+            //   background-color: #ffffff;
+            // }
+
+            &.active {
+              background-color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
