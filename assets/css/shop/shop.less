@@ -1,4 +1,5 @@
 section#AND_shop {
+  padding-top: 105px;
   @w_card: 315.08px;
   @gap_card: 19.92px;
   @container: (@w_card * 4) + (@gap_card * 3) + (@p_container * 2);
@@ -16,11 +17,39 @@ section#AND_shop {
       .col {
         //   background-color: blue;
         &.first {
-          .titulo {
+          padding-right: 50px;
+          .titulo-shop {
+            line-height: 72px;
             margin: 0;
             margin-bottom: 29px;
             text-align: left;
-            font: normal normal medium 95px/133px Space Grotesk;
+            font-family: "Space Grotesk";
+            font-weight: 500;
+            font-size: 95px;
+            // font: normal normal medium 95px/133px Space Grotesk;
+            letter-spacing: 0px;
+            @media screen and (max-width: 800px) {
+              font-size: 90px;
+            }
+            @media screen and (max-width: 752px) {
+              font-size: 70px;
+            }
+
+            @media screen and (max-width: 610px) {
+              font-size: 40px;
+            }
+            a {
+              text-decoration: none;
+              color: #000000;
+            }
+          }
+
+          .subtitulo {
+            font-family: "Space Grotesk";
+            font-weight: 300;
+            font-size: 45px;
+            margin: 0;
+            line-height: 55px;
             letter-spacing: 0px;
             color: #000000;
           }
@@ -39,17 +68,20 @@ section#AND_shop {
       gap: 15.83px;
 
       .btn {
+        padding: 10px 30px;
+        min-width: 139px;
+        min-height: 42px;
+        background-color: #000000;
+        color: white;
+        transition: 0.5s all;
         cursor: pointer;
         border-radius: 10px;
         opacity: 1;
-        font: normal normal normal;
+        font-family: "Space Grotesk";
+        font-size: 25px;
+        font-weight: normal;
 
-        &.black {
-          background: #000000 0% 0% no-repeat padding-box;
-          color: white;
-        }
-
-        &.green {
+        &.active {
           color: #000000;
           background-color: @verder !important;
         }

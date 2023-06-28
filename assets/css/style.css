@@ -943,6 +943,9 @@ footer#footer > .container .movil-flex .e-textos .movil-avisos li a {
 footer#footer > .container .movil-flex .e-textos .movil-avisos li:last-child {
   border: none;
 }
+section#AND_shop {
+  padding-top: 105px;
+}
 section#AND_shop .container {
   max-width: 1360.08px;
   margin: auto;
@@ -956,11 +959,44 @@ section#AND_shop .container .content-col {
   grid-template-columns: repeat(2, 1fr);
   gap: 19.92px;
 }
-section#AND_shop .container .content-col .col.first .titulo {
+section#AND_shop .container .content-col .col.first {
+  padding-right: 50px;
+}
+section#AND_shop .container .content-col .col.first .titulo-shop {
+  line-height: 72px;
   margin: 0;
   margin-bottom: 29px;
   text-align: left;
-  font: normal normal medium 95px/133px Space Grotesk;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+  font-size: 95px;
+  letter-spacing: 0px;
+}
+@media screen and (max-width: 800px) {
+  section#AND_shop .container .content-col .col.first .titulo-shop {
+    font-size: 90px;
+  }
+}
+@media screen and (max-width: 752px) {
+  section#AND_shop .container .content-col .col.first .titulo-shop {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 610px) {
+  section#AND_shop .container .content-col .col.first .titulo-shop {
+    font-size: 40px;
+  }
+}
+section#AND_shop .container .content-col .col.first .titulo-shop a {
+  text-decoration: none;
+  color: #000000;
+}
+section#AND_shop .container .content-col .col.first .subtitulo {
+  font-family: "Space Grotesk";
+  font-weight: 300;
+  font-size: 45px;
+  margin: 0;
+  line-height: 55px;
   letter-spacing: 0px;
   color: #000000;
 }
@@ -974,16 +1010,21 @@ section#AND_shop .container .content-btns {
   gap: 15.83px;
 }
 section#AND_shop .container .content-btns .btn {
+  padding: 10px 30px;
+  min-width: 139px;
+  min-height: 42px;
+  background-color: #000000;
+  color: white;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
   cursor: pointer;
   border-radius: 10px;
   opacity: 1;
-  font: normal normal normal;
+  font-family: "Space Grotesk";
+  font-size: 25px;
+  font-weight: normal;
 }
-section#AND_shop .container .content-btns .btn.black {
-  background: #000000 0% 0% no-repeat padding-box;
-  color: white;
-}
-section#AND_shop .container .content-btns .btn.green {
+section#AND_shop .container .content-btns .btn.active {
   color: #000000;
   background-color: #bcff3b !important;
 }
