@@ -65,7 +65,6 @@
 
   <body>
     <!-- *Samuel preguntar no me convence para hacer esto que se vea mejor -->
-    <!-- !Juan integra el slider -->
     <section id="home-cabecera">
       <div class="container-banner">
         <div class="columnas-banner">
@@ -224,7 +223,7 @@
                   <span>12-24 Septiembre</span>
                 </div>
               </a>
-              <a class="item active" href="#">
+              <a class="item" href="#">
                 <div class="textos">
                   <p>Granada</p>
                   <span>Semana del diseño</span>
@@ -252,28 +251,108 @@
                 </div>
               </a>
             </div>
+
+            <a href="#" class="enlace-ver_todos">ver todos</a>
           </div>
         </div>
       </div>
     </section>
-    <section id="home-proyect"></section>
+
+    <section id="home-proyect">
+      <div class="container-proyect">
+        <h3 class="title-proyect"><a href="#">proyectos amigos</a></h3>
+
+        <div class="element-wrap">
+          <div class="item">
+            <div class="caja-logo">
+              <img
+                src="./assets/img/home/logo-item-1.png"
+                alt="logo"
+                class="logo-img"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="caja-logo">
+              <img
+                src="./assets/img/home/logo-item-2.png"
+                alt="logo"
+                class="logo-img"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="caja-logo">
+              <img
+                src="./assets/img/home/logo-item-3.png"
+                alt="logo"
+                class="logo-img"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="caja-logo">
+              <img
+                src="./assets/img/home/logo-item-4.png"
+                alt="logo"
+                class="logo-img"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="caja-logo">
+              <img
+                src="./assets/img/home/logo-item-5.png"
+                alt="logo"
+                class="logo-img"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="caja-logo">
+              <img
+                src="./assets/img/home/logo-item-6.png"
+                alt="logo"
+                class="logo-img"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="caja-logo">
+              <img
+                src="./assets/img/home/logo-item-7.png"
+                alt="logo"
+                class="logo-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="enlace-ver_todos">ver todos</a>
+      </div>
+    </section>
+
     <footer id="footer"></footer>
 
     <!-- *Scrip info-noticias[eventos] -->
     <script>
-      function removeClassList(nodeList, classRem) {
-        Array.from(nodeList).forEach((elem) => {
-          elem.classList.remove(classRem);
+      const removeClassList = (nodoList, clases) => {
+        Array.from(nodoList).forEach((elem) => {
+          elem.classList.remove(clases);
         });
-      }
-      // Funcion para remover las clase active
+      };
+      const itemLista = document.querySelectorAll(
+        "#home-eventos .info-noticias > .column-two .item"
+      );
+      const newArra = Array.from(itemLista);
 
-      const itemLista = document.querySelectorAll(".item");
-      console.log(itemLista);
-      // *Señalamos todos los elementos. que tenga la palabra item
-
-      // (function () {
-      // })
+      newArra.forEach((element) => {
+        element.addEventListener("click", (e) => {
+          e.preventDefault();
+          removeClassList(itemLista, "active");
+          element.classList.add("active");
+        });
+      });
     </script>
   </body>
 </html>

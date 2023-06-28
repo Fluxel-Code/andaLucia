@@ -236,7 +236,12 @@ section#home-eventos .container-event .info-noticias {
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
-  max-height: 538px;
+  max-height: 590px;
+}
+@media screen and (max-width: 663px) {
+  section#home-eventos .container-event .info-noticias {
+    max-height: none;
+  }
 }
 section#home-eventos .container-event .info-noticias .column-one {
   height: 100%;
@@ -249,7 +254,8 @@ section#home-eventos .container-event .info-noticias .column-one {
 }
 section#home-eventos .container-event .info-noticias .column-one .content-img {
   max-width: 538px;
-  min-height: 330px;
+  height: 330px;
+  max-height: 330px;
   border-radius: 85px;
   background-color: #b3b2b288;
 }
@@ -258,6 +264,7 @@ section#home-eventos .container-event .info-noticias .column-one .content-img im
 }
 section#home-eventos .container-event .info-noticias .column-two {
   width: 60%;
+  height: 100%;
 }
 @media screen and (max-width: 1000px) {
   section#home-eventos .container-event .info-noticias .column-two {
@@ -292,6 +299,11 @@ section#home-eventos .container-event .info-noticias .column-two .lista .item {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
+@media screen and (max-width: 672px) {
+  section#home-eventos .container-event .info-noticias .column-two .lista .item .textos {
+    width: 50%;
+  }
+}
 section#home-eventos .container-event .info-noticias .column-two .lista .item .textos p {
   font-family: "Space Grotesk";
   font-size: 35px;
@@ -301,6 +313,12 @@ section#home-eventos .container-event .info-noticias .column-two .lista .item .t
   letter-spacing: 0px;
   color: #000000;
   margin: 0;
+}
+@media screen and (max-width: 530px) {
+  section#home-eventos .container-event .info-noticias .column-two .lista .item .textos p {
+    font-size: 30px;
+    line-height: 41px;
+  }
 }
 section#home-eventos .container-event .info-noticias .column-two .lista .item .textos > span {
   margin: 0;
@@ -312,6 +330,24 @@ section#home-eventos .container-event .info-noticias .column-two .lista .item .t
   letter-spacing: 0px;
   color: #000000;
 }
+@media screen and (max-width: 752px) {
+  section#home-eventos .container-event .info-noticias .column-two .lista .item .textos > span {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 530px) {
+  section#home-eventos .container-event .info-noticias .column-two .lista .item .textos > span {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 672px) {
+  section#home-eventos .container-event .info-noticias .column-two .lista .item .date {
+    width: 50%;
+    text-align: end;
+  }
+}
 section#home-eventos .container-event .info-noticias .column-two .lista .item .date > span {
   font-family: "Space Grotesk";
   font-size: 25px;
@@ -321,8 +357,29 @@ section#home-eventos .container-event .info-noticias .column-two .lista .item .d
   letter-spacing: 0px;
   color: #000000;
 }
+@media screen and (max-width: 530px) {
+  section#home-eventos .container-event .info-noticias .column-two .lista .item .date > span {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
 section#home-eventos .container-event .info-noticias .column-two .lista .item.active {
   background-color: #ffffff;
+}
+section#home-eventos .container-event .info-noticias .column-two .enlace-ver_todos {
+  padding-top: 20px;
+  display: block;
+  font-size: 29px;
+  text-align: end;
+  color: #020202;
+  font-weight: normal;
+  font-family: "Space Grotesk";
+  line-height: 34px;
+}
+@media screen and (max-width: 1000px) {
+  section#home-eventos .container-event .info-noticias .column-two .enlace-ver_todos {
+    text-align: center;
+  }
 }
 section#home-explora {
   background-color: #ebe0c7;
@@ -452,6 +509,96 @@ section#home-explora .container-explora .texto > p {
 section#home-explora .container-explora .texto > p a {
   font-weight: 500;
   color: black;
+}
+section#home-proyect {
+  padding-top: 101.69px;
+  padding-bottom: 50.69px;
+}
+@media screen and (max-width: 660px) {
+  section#home-proyect {
+    padding-top: 70.69px;
+  }
+}
+section#home-proyect .container-proyect {
+  max-width: 1328px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+section#home-proyect .container-proyect .title-proyect {
+  line-height: 123.6px;
+  font-family: "Space Grotesk";
+  font-size: 103px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+@media screen and (max-width: 990px) {
+  section#home-proyect .container-proyect .title-proyect {
+    font-size: 85px;
+  }
+}
+@media screen and (max-width: 780px) {
+  section#home-proyect .container-proyect .title-proyect {
+    text-align: start;
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 660px) {
+  section#home-proyect .container-proyect .title-proyect {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section#home-proyect .container-proyect .title-proyect {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+section#home-proyect .container-proyect .title-proyect a {
+  text-decoration: none;
+  color: black;
+}
+section#home-proyect .container-proyect .element-wrap {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 33px;
+}
+@media screen and (max-width: 600px) {
+  section#home-proyect .container-proyect .element-wrap {
+    margin-top: 0px;
+  }
+}
+section#home-proyect .container-proyect .element-wrap .item {
+  text-align: center;
+  width: 23%;
+}
+@media screen and (max-width: 820px) {
+  section#home-proyect .container-proyect .element-wrap .item {
+    width: 45%;
+  }
+}
+section#home-proyect .container-proyect > .enlace-ver_todos {
+  margin-top: 40px;
+  display: block;
+  font-size: 29px;
+  text-align: center;
+  color: #020202;
+  font-weight: normal;
+  font-family: "Space Grotesk";
+  line-height: 34px;
+  text-decoration: none;
 }
 section#home-texto {
   padding-top: 164px;
