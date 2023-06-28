@@ -205,7 +205,7 @@
           </button>
         </div>
 
-        <!-- !Nota no agarra el displey none -->
+        <!-- !Nota no agarra el displey none y mi navegador probar en otro -->
         <div class="info-noticias">
           <div class="column-one">
             <div class="content-img">
@@ -258,5 +258,22 @@
     </section>
     <section id="home-proyect"></section>
     <footer id="footer"></footer>
+
+    <!-- *Scrip info-noticias[eventos] -->
+    <script>
+      function removeClassList(nodeList, classRem) {
+        Array.from(nodeList).forEach((elem) => {
+          elem.classList.remove(classRem);
+        });
+      }
+      // Funcion para remover las clase active
+
+      const itemLista = document.querySelectorAll(".item");
+      console.log(itemLista);
+      // *Señalamos todos los elementos. que tenga la palabra item
+
+      // (function () {
+      // })
+    </script>
   </body>
 </html>
