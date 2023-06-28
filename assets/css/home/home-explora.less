@@ -1,7 +1,11 @@
 section#home-explora {
   background-color: @beige;
-  padding-top: 121px;
   padding-bottom: 82.06px;
+  padding-top: 121px;
+  @media screen and (max-width: 800px) {
+    padding-top: 15.5px;
+    padding-bottom: 42.03px;
+  }
   .container-explora {
     max-width: 1318px + (@p_container * 2);
     margin: auto;
@@ -9,18 +13,42 @@ section#home-explora {
     padding-right: @p_container;
 
     .header-explora {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media screen and (max-width: 610px) {
+        margin-bottom: 0;
+      }
       .title-explora {
-        color: black;
+        // color: black;
         line-height: 123.6px;
         font-family: "Space Grotesk";
         font-size: 103px;
         font-weight: 500;
         text-align: start;
+        margin: 0;
+        @media screen and (max-width: 800px) {
+          font-size: 90px;
+        }
+        @media screen and (max-width: 752px) {
+          font-size: 70px;
+        }
+
+        @media screen and (max-width: 610px) {
+          font-size: 40px;
+        }
+
+        a {
+          color: black;
+          text-decoration: none;
+        }
         //   font: normal normal medium 103px/124px Space Grotesk;
       }
 
       .btn-explora {
-        max-width: 200px;
+        min-width: 162px;
+        // width: 200px;
         height: 42.55px;
         border-radius: 15px;
         background-color: white;
@@ -30,6 +58,9 @@ section#home-explora {
         display: flex;
         align-items: center;
         gap: 10.5px;
+        @media screen and (max-width: 610px) {
+          height: 50px;
+        }
         a {
           display: block;
           font-family: "Space Grotesk";
@@ -37,7 +68,6 @@ section#home-explora {
           font-size: 18px;
           // font: normal normal bold 18px/36px Space Grotesk;
           background-color: transparent;
-          //   height: 100%;
           width: 100%;
           text-decoration: none;
           display: block;
@@ -57,6 +87,31 @@ section#home-explora {
               stroke: black;
             }
           }
+        }
+      }
+    }
+
+    .texto {
+      @media screen and (max-width: 1310px) {
+        text-align: center;
+      }
+      & > p {
+        // *Se ve mejor en 50, identico al xd
+        font-size: 50px;
+        // font-size: 54px;
+        font-weight: lighter;
+        font-family: "Space Grotesk";
+        line-height: 84px;
+        margin: 0;
+        color: black;
+        @media screen and (max-width: 610px) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+
+        a {
+          font-weight: 500;
+          color: black;
         }
       }
     }

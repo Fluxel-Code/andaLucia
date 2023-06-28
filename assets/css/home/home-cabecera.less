@@ -3,7 +3,7 @@ section#home-cabecera {
   width: 100%;
   min-height: 900px;
   @media screen and (max-width: 672px) {
-    min-height: 500px;
+    min-height: 600px;
   }
   //   height: 100vh;
 
@@ -20,7 +20,7 @@ section#home-cabecera {
       gap: 54.1px;
       align-items: end;
       min-height: 466px;
-      @media screen and (max-width: 1021px) {
+      @media screen and (max-width: 1046px) {
         flex-wrap: wrap;
         justify-content: start;
         gap: 0px;
@@ -38,15 +38,15 @@ section#home-cabecera {
       .content-titulos {
         max-width: 643px;
         width: 50%;
-        margin-bottom: 90px;
+        margin-bottom: 120px;
         @media screen and (max-width: 1186px) {
           width: 100%;
           max-width: 600px;
         }
 
-        @media screen and (max-width: 1021px) {
+        @media screen and (max-width: 1046px) {
           //   max-width: 486px;
-          margin-bottom: 0;
+          margin-bottom: 40px;
         }
 
         & h1 {
@@ -74,21 +74,27 @@ section#home-cabecera {
       }
 
       .textos {
-        padding-right: 25px;
-        width: 30%;
+        // padding-right: 25px;
+        width: 41%;
         max-width: 523px;
         @media screen and (max-width: 1186px) {
           width: 100%;
-          max-width: 365px;
+          max-width: 450px;
         }
 
-        @media screen and (max-width: 1021px) {
+        @media screen and (max-width: 1046px) {
           margin-left: auto;
         }
         & > p {
+          line-height: 40px;
+          font-size: 30px;
           margin: 0;
           font-family: "Space Grotesk";
           color: #000000;
+          @media screen and (max-width: 500px) {
+            font-size: 20px;
+            line-height: 28px;
+          }
         }
       }
     }
