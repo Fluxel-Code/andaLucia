@@ -242,9 +242,9 @@ section#home-eventos .container-event .info-noticias .column-one {
   height: 100%;
   width: 40%;
 }
-@media screen and (max-width: 977px) {
+@media screen and (max-width: 1000px) {
   section#home-eventos .container-event .info-noticias .column-one {
-    display: none !important;
+    display: none;
   }
 }
 section#home-eventos .container-event .info-noticias .column-one .content-img {
@@ -259,7 +259,7 @@ section#home-eventos .container-event .info-noticias .column-one .content-img im
 section#home-eventos .container-event .info-noticias .column-two {
   width: 60%;
 }
-@media screen and (max-width: 977px) {
+@media screen and (max-width: 1000px) {
   section#home-eventos .container-event .info-noticias .column-two {
     width: 100%;
   }
