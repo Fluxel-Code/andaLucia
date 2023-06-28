@@ -1,5 +1,6 @@
 section#AND_shop {
   padding-top: 105px;
+  padding-bottom: 67px;
   @w_card: 315.08px;
   @gap_card: 19.92px;
   @container: (@w_card * 4) + (@gap_card * 3) + (@p_container * 2);
@@ -113,7 +114,8 @@ section#AND_shop {
       padding-top: 110px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 30px 19.92px;
+      // gap: 30px 19.92px;
+      gap: @gap_card;
 
       @media screen and (max-width: 1200px) {
         grid-template-columns: repeat(3, 1fr);
@@ -153,11 +155,18 @@ section#AND_shop {
           }
 
           .img-flotante {
-            // background: red;
             position: absolute;
             bottom: 0;
             left: 0;
             transform: translateY(50%);
+          }
+
+          .texto > .info {
+            color: @verder;
+            font-size: 21px;
+            font-family: "Space Grotesk";
+            margin-top: 10px;
+            margin-bottom: 0;
           }
         }
 
@@ -181,7 +190,6 @@ section#AND_shop {
             padding-right: 30px;
             letter-spacing: 0px;
             line-height: 35px;
-            // font: normal normal medium 25px/35px Space Grotesk;
             font-weight: medium;
             font-family: "Space Grotesk";
             font-size: 25px;
@@ -200,7 +208,7 @@ section#AND_shop {
             grid-row: auto / span 2;
 
             .header {
-              height: (@h_header * 2) + @h_body + @gap_card + 3px;
+              height: (@h_header * 2) + @h_body + @gap_card + 49px;
               .img-flotante {
                 // background: red;
                 position: absolute;
@@ -209,9 +217,26 @@ section#AND_shop {
                 transform: translateY(50%);
               }
             }
+
+            .body {
+              .name {
+                font-size: 40px;
+              }
+            }
           }
         }
       }
+    }
+
+    .enlace-shop {
+      margin-top: 40px;
+      display: block;
+      font-size: 29px;
+      text-align: center;
+      color: #020202;
+      font-weight: normal;
+      font-family: "Space Grotesk";
+      line-height: 34px;
     }
   }
 }

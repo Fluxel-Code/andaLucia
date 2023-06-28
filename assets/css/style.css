@@ -945,6 +945,7 @@ footer#footer > .container .movil-flex .e-textos .movil-avisos li:last-child {
 }
 section#AND_shop {
   padding-top: 105px;
+  padding-bottom: 67px;
 }
 section#AND_shop .container {
   max-width: 1360.08px;
@@ -1067,7 +1068,7 @@ section#AND_shop .container .content-products {
   display: grid;
   -ms-grid-columns: 1fr 19.92px 1fr 19.92px 1fr 19.92px 1fr;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px 19.92px;
+  gap: 19.92px;
   width: 100%;
 }
 @media screen and (max-width: 1200px) {
@@ -1118,6 +1119,13 @@ section#AND_shop .container .content-products .card .header .img-flotante {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
 }
+section#AND_shop .container .content-products .card .header .texto > .info {
+  color: #bcff3b;
+  font-size: 21px;
+  font-family: "Space Grotesk";
+  margin-top: 10px;
+  margin-bottom: 0;
+}
 section#AND_shop .container .content-products .card .body {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -1152,7 +1160,7 @@ section#AND_shop .container .content-products .card .body .name {
     grid-row: auto / span 2;
   }
   section#AND_shop .container .content-products .card.big .header {
-    height: 715.92px;
+    height: 761.92px;
   }
   section#AND_shop .container .content-products .card.big .header .img-flotante {
     position: absolute;
@@ -1161,4 +1169,17 @@ section#AND_shop .container .content-products .card .body .name {
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
   }
+  section#AND_shop .container .content-products .card.big .body .name {
+    font-size: 40px;
+  }
+}
+section#AND_shop .container .enlace-shop {
+  margin-top: 40px;
+  display: block;
+  font-size: 29px;
+  text-align: center;
+  color: #020202;
+  font-weight: normal;
+  font-family: "Space Grotesk";
+  line-height: 34px;
 }
