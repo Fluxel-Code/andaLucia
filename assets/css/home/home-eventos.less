@@ -1,5 +1,6 @@
 section#home-eventos {
   background-color: @verder;
+  // min-height: 680px;
   padding-bottom: 82.06px;
   padding-top: 121px;
   @media screen and (max-width: 800px) {
@@ -97,18 +98,21 @@ section#home-eventos {
     .info-noticias {
       display: flex;
       gap: 16px;
-      max-height: 538px;
+      max-height: 590px;
+      @media screen and (max-width: 663px) {
+        max-height: none;
+      }
       .column-one {
         height: 100%;
         width: 40%;
-        // display: none;
         @media screen and (max-width: 1000px) {
-          display: none !important;
-          //   width: 0;
+          display: none;
+          // background-color: red;
         }
         .content-img {
           max-width: 538px;
-          min-height: 330px;
+          height: 330px;
+          max-height: 330px;
           border-radius: 85px;
           background-color: @gris-img;
           img {
@@ -119,7 +123,9 @@ section#home-eventos {
 
       .column-two {
         width: 60%;
-        @media screen and (max-width: 977px) {
+        height: 100%;
+        @media screen and (max-width: 1000px) {
+          // width: 50%;
           width: 100%;
         }
         .lista {
@@ -136,7 +142,12 @@ section#home-eventos {
             align-items: start;
             justify-content: space-between;
             transition: 0.5s all;
+            @media screen {
+            }
             .textos {
+              @media screen and (max-width: 672px) {
+                width: 50%;
+              }
               p {
                 font-family: "Space Grotesk";
                 font-size: 35px;
@@ -147,6 +158,10 @@ section#home-eventos {
                 letter-spacing: 0px;
                 color: #000000;
                 margin: 0;
+                @media screen and (max-width: 530px) {
+                  font-size: 30px;
+                  line-height: 41px;
+                }
               }
 
               & > span {
@@ -159,27 +174,56 @@ section#home-eventos {
                 // font: normal normal bold 35px/48px Space Grotesk;
                 letter-spacing: 0px;
                 color: #000000;
+                @media screen and (max-width: 752px) {
+                  font-size: 30px;
+                  line-height: 38px;
+                }
+
+                @media screen and (max-width: 530px) {
+                  font-size: 22px;
+                  line-height: 30px;
+                }
               }
             }
 
-            .date > span {
-              font-family: "Space Grotesk";
-              font-size: 25px;
-              font-weight: normal;
-              text-align: right;
-              line-height: 48px;
-              // font: normal normal bold 35px/48px Space Grotesk;
-              letter-spacing: 0px;
-              color: #000000;
+            .date {
+              @media screen and (max-width: 672px) {
+                width: 50%;
+                text-align: end;
+              }
+              & > span {
+                font-family: "Space Grotesk";
+                font-size: 25px;
+                font-weight: normal;
+                text-align: right;
+                line-height: 48px;
+                // font: normal normal bold 35px/48px Space Grotesk;
+                letter-spacing: 0px;
+                color: #000000;
+                @media screen and (max-width: 530px) {
+                  font-size: 20px;
+                  line-height: 28px;
+                }
+              }
             }
-
-            // &:hover {
-            //   background-color: #ffffff;
-            // }
 
             &.active {
               background-color: #ffffff;
             }
+          }
+        }
+
+        .enlace-ver_todos {
+          padding-top: 20px;
+          display: block;
+          font-size: 29px;
+          text-align: end;
+          color: #020202;
+          font-weight: normal;
+          font-family: "Space Grotesk";
+          line-height: 34px;
+          @media screen and (max-width: 1000px) {
+            text-align: center;
           }
         }
       }
