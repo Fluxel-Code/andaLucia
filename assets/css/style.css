@@ -2089,6 +2089,51 @@ nav#AND_Nav_menu .container .menu ul .content-link.only-desk {
     display: none;
   }
 }
+nav#AND_Nav_menu .container .menu ul .content-link.only-desk .btn {
+  min-width: 162px;
+  height: 42.55px;
+  border-radius: 15px;
+  background-color: white;
+  padding: 9px 13px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10.5px;
+}
+@media screen and (max-width: 610px) {
+  nav#AND_Nav_menu .container .menu ul .content-link.only-desk .btn {
+    height: 50px;
+  }
+}
+nav#AND_Nav_menu .container .menu ul .content-link.only-desk .btn a {
+  font-family: "Space Grotesk";
+  font-weight: bold;
+  font-size: 18px;
+  background-color: transparent;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+nav#AND_Nav_menu .container .menu ul .content-link.only-desk .btn:hover {
+  border: 0;
+  background-color: black;
+}
+nav#AND_Nav_menu .container .menu ul .content-link.only-desk .btn:hover a {
+  color: white;
+}
+nav#AND_Nav_menu .container .menu ul .content-link.only-desk .btn:hover svg {
+  fill: white;
+}
+nav#AND_Nav_menu .container .menu ul .content-link.only-desk .btn:hover svg line {
+  stroke: black;
+}
 nav#AND_Nav_menu .container .menu ul .content-link.only-desk .content-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2181,7 +2226,7 @@ nav#AND_Nav_menu .container .movil-footer {
       -ms-flex-pack: end;
           justify-content: end;
   position: fixed;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   z-index: 100;
