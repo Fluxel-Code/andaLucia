@@ -1951,7 +1951,7 @@ nav#AND_Nav_menu .container {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   nav#AND_Nav_menu .container {
     height: 111px;
     overflow: hidden;
@@ -1967,7 +1967,7 @@ nav#AND_Nav_menu .container {
             justify-content: start;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   nav#AND_Nav_menu .container .content-log-bur {
     width: 100%;
     display: -webkit-box;
@@ -1991,7 +1991,7 @@ nav#AND_Nav_menu .container .content-log-bur .logo img.dark {
 nav#AND_Nav_menu .container .content-log-bur .logo img.light {
   display: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   nav#AND_Nav_menu .container .content-log-bur .logo img {
     height: 60px;
   }
@@ -2009,7 +2009,7 @@ nav#AND_Nav_menu .container .content-log-bur .burguer {
   position: relative;
   cursor: pointer;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   nav#AND_Nav_menu .container .content-log-bur .burguer {
     display: block;
   }
@@ -2044,7 +2044,7 @@ nav#AND_Nav_menu .container .content-log-bur .burguer .line:nth-child(3) {
 nav#AND_Nav_menu .container .content-log-bur .burguer:hover .line {
   width: 100%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   nav#AND_Nav_menu .container .menu {
     min-height: 400px;
     height: 100%;
@@ -2066,7 +2066,7 @@ nav#AND_Nav_menu .container .menu ul {
           align-items: center;
   gap: 28.63px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   nav#AND_Nav_menu .container .menu ul {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -2085,7 +2085,7 @@ nav#AND_Nav_menu .container .menu ul .content-link .link {
   letter-spacing: 0px;
   color: #000000;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   nav#AND_Nav_menu .container .menu ul .content-link .link {
     color: white;
     font-size: 30px;
@@ -2100,7 +2100,7 @@ nav#AND_Nav_menu .container .menu ul .content-link.only-desk {
           align-items: center;
   gap: 16px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   nav#AND_Nav_menu .container .menu ul .content-link.only-desk {
     display: none;
   }
@@ -2191,7 +2191,7 @@ nav#AND_Nav_menu .container .movil-footer {
           align-items: center;
   padding-bottom: 20px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   nav#AND_Nav_menu .container .movil-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2230,7 +2230,7 @@ nav#AND_Nav_menu .container .movil-footer > .btn a {
   display: block;
   color: black;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   nav#AND_Nav_menu.active {
     background-color: black;
   }
@@ -2283,7 +2283,7 @@ nav#AND_Nav_menu .container .movil-footer > .btn a {
   padding-top: 17px;
   padding-bottom: 17px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   #AND_Nav_menu_botton.nav-botton {
     display: none;
   }
@@ -2317,4 +2317,10 @@ nav#AND_Nav_menu .container .movil-footer > .btn a {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
+}
+section#columna_Superior .container-e {
+  max-width: 1358px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
