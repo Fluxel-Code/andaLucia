@@ -1,6 +1,8 @@
 section#superior-agency {
-  margin-top: 138px;
   margin-bottom: 161px;
+  @media screen and (max-width: 1100px) {
+    margin-top: 0;
+  }
   .container_agency {
     max-width: 1318px + (@p_container * 2);
     margin: auto;
@@ -10,67 +12,146 @@ section#superior-agency {
     .columns {
       display: flex;
       gap: 111px;
+      @media screen and (max-width: 1100px) {
+        gap: 0;
+        max-width: 500px;
+        margin: auto;
+      }
       & > .one {
-        .btn-social {
-          display: flex;
-          gap: 12px;
-          .btn {
-            padding: 10px 30px;
-            min-height: 42px;
-            background-color: @verder;
-            color: #000000;
-            transition: 0.5s all;
-            cursor: pointer;
-            border-radius: 10px;
-            opacity: 1;
-            font-family: "Space Grotesk";
-            font-size: 25px;
-            font-weight: normal;
-
-            &:hover {
-              border-color: transparent;
-            }
-
-            &.active {
-              color: white;
-              background-color: black !important;
-            }
-          }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media screen and (max-width: 1100px) {
+          width: 100%;
         }
 
-        .titulo-agency {
-          max-width: 446px;
-          font-size: 85px;
-          font-family: "Space Grotesk";
-          line-height: 85px;
-          a {
-            text-decoration: none;
-            color: #000000;
+        .superior {
+          .principal {
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width: 1100px) {
+              flex-direction: column-reverse;
+              margin-bottom: 40px;
+            }
+            .btn-social {
+              display: flex;
+              gap: 12px;
+              .btn {
+                padding: 10px 30px;
+                min-height: 42px;
+                background-color: @verder;
+                color: #000000;
+                transition: 0.5s all;
+                cursor: pointer;
+                border-radius: 10px;
+                opacity: 1;
+                font-family: "Space Grotesk";
+                font-size: 25px;
+                font-weight: normal;
+                @media screen and (max-width: 800px) {
+                  font-size: 20px;
+                }
+
+                &:hover {
+                  border-color: transparent;
+                }
+
+                &.active {
+                  color: white;
+                  background-color: black !important;
+                }
+              }
+
+              .icon {
+                display: block;
+                @media screen and (max-width: 1100px) {
+                  display: none;
+                }
+              }
+            }
+
+            .titulo-agency {
+              max-width: 446px;
+              font-size: 85px;
+              font-family: "Space Grotesk";
+              line-height: 85px;
+              @media screen and (max-width: 1100px) {
+                margin-top: 0;
+                margin-bottom: 20px;
+              }
+
+              @media screen and (max-width: 570px) {
+                font-size: 50px;
+                line-height: 60px;
+              }
+              a {
+                text-decoration: none;
+                color: #000000;
+              }
+            }
           }
-        }
 
-        .list-info {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
+          .list-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
 
-          li {
-            color: #000000;
-            font-size: 28px;
-            font-family: "Space Grotesk";
-            font-weight: normal;
-            a {
-              text-decoration: none;
+            li {
               color: #000000;
+              font-size: 28px;
+              font-family: "Space Grotesk";
+              font-weight: normal;
+              @media screen and (max-width: 800px) {
+                font-size: 20px;
+                line-height: 30px;
+              }
+              a {
+                text-decoration: none;
+                color: #000000;
+              }
+            }
+          }
+        }
+
+        .parrafo-movil {
+          display: none;
+          @media screen and (max-width: 1100px) {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 70px;
+          }
+
+          p {
+            line-height: 60px;
+            font-size: 45px;
+            color: #000000;
+            font-family: "Space Grotesk";
+            margin: 0;
+
+            @media screen and (max-width: 1100px) {
+              font-size: 28px;
+              line-height: 35px;
+            }
+            @media screen and (max-width: 800px) {
+              font-size: 20px;
+              line-height: 30px;
             }
           }
         }
 
         .solicitar-btn-agency {
+          max-width: 450px;
           border: 1px solid black;
           padding: 10px 20px;
           line-height: 30px;
+          transition: 0.5s all;
+          @media screen and (max-width: 1100px) {
+            margin-top: 70px;
+          }
           strong {
+            display: block;
             font-family: "Space Grotesk";
             text-align: start;
             font-size: 15px;
@@ -83,24 +164,40 @@ section#superior-agency {
             text-align: start;
             font-size: 15px;
             color: #000000;
+            display: flex;
+            gap: 10px;
 
             strong > a {
               font-family: "Space Grotesk";
               text-align: start;
               font-size: 15px;
               color: #000000;
+              display: block;
             }
+          }
+
+          &:hover {
+            background-color: @verder;
           }
         }
       }
 
       & > .two {
         .parrafos {
-          p {
-            line-height: 60px;
-            font-size: 45px;
-            color: #000000;
-            font-family: "Space Grotesk";
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          @media screen and (max-width: 1100px) {
+            display: none;
+          }
+          li {
+            p {
+              line-height: 60px;
+              font-size: 45px;
+              color: #000000;
+              font-family: "Space Grotesk";
+              margin: 0;
+            }
           }
         }
       }
