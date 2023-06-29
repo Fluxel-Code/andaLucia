@@ -1,0 +1,63 @@
+section#superior-agency {
+  margin-top: 138px;
+  margin-bottom: 161px;
+  .container_agency {
+    max-width: 1318px + (@p_container * 2);
+    margin: auto;
+    padding-left: @p_container;
+    padding-right: @p_container;
+
+    .columns {
+      display: flex;
+      gap: 111px;
+      & > .one {
+        .btn-social {
+          display: flex;
+          gap: 12px;
+          .btn {
+            padding: 10px 30px;
+            min-height: 42px;
+            background-color: @verder;
+            color: #000000;
+            transition: 0.5s all;
+            cursor: pointer;
+            border-radius: 10px;
+            opacity: 1;
+            font-family: "Space Grotesk";
+            font-size: 25px;
+            font-weight: normal;
+
+            &:hover {
+              border-color: transparent;
+            }
+
+            &.active {
+              color: white;
+              background-color: black !important;
+            }
+          }
+        }
+
+        .titulo-agency {
+          max-width: 446px;
+          font-size: 85px;
+          font-family: "Space Grotesk";
+          line-height: 85px;
+          a {
+            text-decoration: none;
+            color: #000000;
+          }
+        }
+
+        .list-info {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+
+      & > .two {
+      }
+    }
+  }
+}

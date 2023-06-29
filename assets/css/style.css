@@ -1413,6 +1413,69 @@ section#proyecto_publico .container-p > .enlace-ver_todos {
   line-height: 34px;
   text-decoration: none;
 }
+section#superior-agency {
+  margin-top: 138px;
+  margin-bottom: 161px;
+}
+section#superior-agency .container_agency {
+  max-width: 1358px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+section#superior-agency .container_agency .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 111px;
+}
+section#superior-agency .container_agency .columns > .one .btn-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+section#superior-agency .container_agency .columns > .one .btn-social .btn {
+  padding: 10px 30px;
+  min-height: 42px;
+  background-color: #bcff3b;
+  color: #000000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: pointer;
+  border-radius: 10px;
+  opacity: 1;
+  font-family: "Space Grotesk";
+  font-size: 25px;
+  font-weight: normal;
+}
+section#superior-agency .container_agency .columns > .one .btn-social .btn:hover {
+  border-color: transparent;
+}
+section#superior-agency .container_agency .columns > .one .btn-social .btn.active {
+  color: white;
+  background-color: black !important;
+}
+section#superior-agency .container_agency .columns > .one .titulo-agency {
+  max-width: 446px;
+  font-size: 85px;
+  font-family: "Space Grotesk";
+  line-height: 85px;
+}
+section#superior-agency .container_agency .columns > .one .titulo-agency a {
+  text-decoration: none;
+  color: #000000;
+}
+section#superior-agency .container_agency .columns > .one .list-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
 section#AND_shop {
   padding-top: 105px;
   padding-bottom: 67px;
