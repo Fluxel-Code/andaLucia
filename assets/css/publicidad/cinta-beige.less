@@ -20,6 +20,7 @@ section#cinta-beige {
         @media screen and (max-width: 1260px) {
           gap: 50px;
           align-items: center;
+          flex-direction: column;
         }
         .square-social {
           display: block;
@@ -49,8 +50,8 @@ section#cinta-beige {
           display: flex;
           gap: 35px;
           @media screen and (max-width: 1260px) {
-            flex-wrap: wrap;
-            justify-content: end;
+            flex-direction: column;
+            justify-content: center;
           }
           li {
             text-align: center;
@@ -61,7 +62,7 @@ section#cinta-beige {
             font-weight: normal;
             font-family: "Space Grotesk";
             @media screen and (max-width: 1260px) {
-              text-align: end;
+              text-align: center;
             }
 
             @media screen and (max-width: 560px) {
@@ -93,8 +94,8 @@ section#cinta-beige {
         height: 3px;
         margin: 0;
         background-color: #707070;
-        @media screen and (max-width: 800px) {
-          height: 2px;
+        @media screen and (max-width: 1260px) {
+          display: none;
         }
       }
     }

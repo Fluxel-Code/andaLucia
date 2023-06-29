@@ -1059,6 +1059,10 @@ section#cinta-beige .container-public-b .flex-lineaTime .item-flex {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 section#cinta-beige .container-public-b .flex-lineaTime .item-flex .square-social {
@@ -1103,11 +1107,13 @@ section#cinta-beige .container-public-b .flex-lineaTime .item-flex .flex-info {
 }
 @media screen and (max-width: 1260px) {
   section#cinta-beige .container-public-b .flex-lineaTime .item-flex .flex-info {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 section#cinta-beige .container-public-b .flex-lineaTime .item-flex .flex-info li {
@@ -1121,7 +1127,7 @@ section#cinta-beige .container-public-b .flex-lineaTime .item-flex .flex-info li
 }
 @media screen and (max-width: 1260px) {
   section#cinta-beige .container-public-b .flex-lineaTime .item-flex .flex-info li {
-    text-align: end;
+    text-align: center;
   }
 }
 @media screen and (max-width: 560px) {
@@ -1154,9 +1160,9 @@ section#cinta-beige .container-public-b .flex-lineaTime hr {
   margin: 0;
   background-color: #707070;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1260px) {
   section#cinta-beige .container-public-b .flex-lineaTime hr {
-    height: 2px;
+    display: none;
   }
 }
 section#tarifas {
