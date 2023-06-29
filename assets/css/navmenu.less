@@ -21,6 +21,8 @@ nav#AND_Nav_menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    //
+    // gap: 356px;
 
     @media screen and (max-width: @breakpoind_menu) {
       height: @h_navbar - 40px;
@@ -131,7 +133,10 @@ nav#AND_Nav_menu {
           .link {
             text-decoration: none;
             text-align: left;
-            font: normal normal medium 18px/31px Space Grotesk;
+            // font-size: 18px;
+            // font-weight: 500;
+            // font-family: "Space Grotesk";
+            font: normal normal medium 18px/31px;
             letter-spacing: 0px;
             color: #000000;
 
@@ -232,6 +237,56 @@ nav#AND_Nav_menu {
       @media screen and (max-width: @breakpoind_menu) {
         display: flex;
       }
+
+      & > .btn {
+        min-width: 162px;
+        height: 42.55px;
+        border-radius: 5px;
+        // background-color: white;
+        background-color: @verder;
+        padding: 9px 13px;
+        -webkit-transition: 0.5s all;
+        transition: 0.5s all;
+        border: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 10.5px;
+        @media screen and (max-width: 610px) {
+          height: 50px;
+        }
+
+        a {
+          display: block;
+          font-family: "Space Grotesk";
+          font-weight: bold;
+          font-size: 18px;
+          // font: normal normal bold 18px/36px Space Grotesk;
+          background-color: transparent;
+          width: 100%;
+          text-decoration: none;
+          display: block;
+          color: black;
+        }
+
+        // &:active {
+        //   border: 0;
+        //   background-color: @verder;
+        //   a {
+        //     color: black;
+        //   }
+
+        //   svg {
+        //     fill: white;
+        //     line {
+        //       stroke: black;
+        //     }
+        //   }
+        // }
+      }
     }
   }
 
@@ -270,9 +325,6 @@ nav#AND_Nav_menu {
             }
             .line:nth-child(3) {
               transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-            }
-
-            &:hover {
             }
           }
         }
