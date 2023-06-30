@@ -1,0 +1,25 @@
+section#slider-agency {
+  padding: 40px 0;
+  background: @verder;
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    .swiper {
+      @media screen and (min-width: 700px) {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+
+      .swiper-wrapper {
+        .swiper-slide {
+          min-height: 366px;
+          border-radius: 20px;
+          border: 3px solid red;
+          @media screen and (min-width: 700px) {
+            width: 599px;
+          }
+        }
+      }
+    }
+  }
+}
