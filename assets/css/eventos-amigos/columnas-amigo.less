@@ -86,6 +86,9 @@ section#columns-superior {
           flex-direction: column;
           gap: 30px;
           margin-bottom: 100px;
+          @media screen and (max-width: 1100px) {
+            margin-bottom: 0px;
+          }
 
           .informacion > p {
             margin-top: 10px;
@@ -97,6 +100,10 @@ section#columns-superior {
             font-size: 28px;
             font-family: "Space Grotesk";
             font-weight: normal;
+            @media screen and (max-width: 1100px) {
+              font-weight: bold;
+              margin-top: 30px;
+            }
             @media screen and (max-width: 800px) {
               font-size: 20px;
               line-height: 30px;
@@ -121,6 +128,36 @@ section#columns-superior {
             .img {
               width: 100%;
               object-fit: cover;
+            }
+          }
+        }
+
+        // movil texto
+        .parrafoMovil {
+          display: none;
+          @media screen and (max-width: 1100px) {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 70px;
+            margin-top: 10px;
+          }
+
+          p {
+            line-height: 60px;
+            font-size: 45px;
+            color: #000000;
+            font-family: "Space Grotesk";
+            margin: 0;
+
+            @media screen and (max-width: 1100px) {
+              font-size: 28px;
+              line-height: 35px;
+            }
+            @media screen and (max-width: 800px) {
+              font-size: 20px;
+              line-height: 30px;
             }
           }
         }
