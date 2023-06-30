@@ -1,0 +1,83 @@
+section#proyecto_publico {
+  padding-top: 158px;
+  padding-bottom: 50.69px;
+  @media screen and (max-width: 800px) {
+    padding-top: 60px;
+  }
+  .container-p {
+    max-width: 1318px + (@p_container * 2);
+    margin: auto;
+    padding-left: @p_container;
+    padding-right: @p_container;
+
+    .texto > p {
+      margin: 0;
+      line-height: 80px;
+      font-size: 54px;
+      color: black;
+      font-family: "Space Grotesk";
+      @media screen and (max-width: 1310px) {
+        text-align: center;
+      }
+
+      @media screen and (max-width: 1100px) {
+        font-size: 28px;
+        line-height: 35px;
+        text-align: left;
+        margin-bottom: 30px;
+      }
+
+      @media screen and (max-width: 800px) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      & > a {
+        position: relative;
+        text-decoration: none;
+        color: black;
+      }
+
+      & > a::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 2px solid black;
+      }
+    }
+
+    .elemento_wrap {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 33px;
+      @media screen and (max-width: 600px) {
+        margin-top: 0px;
+      }
+      .item {
+        text-align: center;
+        width: 23%;
+        @media screen and (max-width: 820px) {
+          width: 45%;
+        }
+      }
+    }
+
+    & > .enlace-ver_todos {
+      margin-top: 40px;
+      display: block;
+      font-size: 29px;
+      text-align: center;
+      color: #020202;
+      font-weight: normal;
+      font-family: "Space Grotesk";
+      line-height: 34px;
+      text-decoration: none;
+    }
+  }
+}
