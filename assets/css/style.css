@@ -2657,42 +2657,65 @@ section#bg-franja-verde {
     padding-top: 160px;
     padding-bottom: 160px;
   }
-  section#bg-franja-verde .container-verde {
-    max-width: 540px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: auto;
-  }
+}
+section#bg-franja-verde .container-verde {
+  max-width: 540px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+section#bg-franja-verde .container-verde > .lista-informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 800px) {
   section#bg-franja-verde .container-verde > .lista-informacion {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
-  section#bg-franja-verde .container-verde > .lista-informacion li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 25px;
-    color: #000000;
-    font-size: 28px;
-    font-family: "Space Grotesk";
-    font-weight: normal;
+}
+section#bg-franja-verde .container-verde > .lista-informacion .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  color: #000000;
+  font-size: 28px;
+  font-family: "Space Grotesk";
+  font-weight: normal;
+}
+@media screen and (max-width: 800px) {
+  section#bg-franja-verde .container-verde > .lista-informacion .item {
+    font-size: 20px;
+    gap: 20px;
   }
-  section#bg-franja-verde .container-verde > .lista-informacion li > a {
-    text-decoration-color: black;
-    color: #000000;
+}
+@media screen and (max-width: 500px) {
+  section#bg-franja-verde .container-verde > .lista-informacion .item {
+    font-size: 18px;
+    gap: 20px;
   }
-  section#bg-franja-verde .container-verde > .lista-informacion li span {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+}
+section#bg-franja-verde .container-verde > .lista-informacion .item > a {
+  text-decoration-color: black;
+  color: #000000;
+}
+section#bg-franja-verde .container-verde > .lista-informacion .item span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 800px) {
+  section#bg-franja-verde .container-verde > .lista-informacion .item span svg {
+    width: 38.315px;
+    height: 52.953px;
   }
 }
