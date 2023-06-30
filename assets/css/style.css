@@ -2329,7 +2329,7 @@ section#columna_Superior .container-e {
   padding-right: 20px;
 }
 section#columna_Superior .container-e .columnas {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2718,4 +2718,9 @@ section#bg-franja-verde .container-verde > .lista-informacion .item span {
     width: 38.315px;
     height: 52.953px;
   }
+}
+section#bg-franja-verde .container-verde > .lista-informacion .item span .flecha-verder {
+  width: 35px;
+  height: 18px;
+  margin-left: -20px;
 }
