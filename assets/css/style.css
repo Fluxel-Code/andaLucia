@@ -2905,6 +2905,11 @@ section#columns-superior .container-column .content-flex > .first .parrafoMovil 
     margin-top: 10px;
   }
 }
+@media screen and (max-width: 500px) {
+  section#columns-superior .container-column .content-flex > .first .parrafoMovil {
+    margin-bottom: 0px;
+  }
+}
 section#columns-superior .container-column .content-flex > .first .parrafoMovil p {
   line-height: 60px;
   font-size: 45px;
@@ -3001,4 +3006,87 @@ section#columns-superior .container-column .content-flex > .second .parrafos li 
   color: #000000;
   font-family: "Space Grotesk";
   margin: 0;
+}
+section#franja-verde {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  section#franja-verde {
+    display: block;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(83%, #bcff3b), color-stop(82%, white));
+    background-image: linear-gradient(360deg, #bcff3b 83%, white 82%);
+    padding-bottom: 160px;
+  }
+}
+section#franja-verde .container-green {
+  max-width: 540px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+section#franja-verde .container-green .content-img {
+  background-color: #b3b2b288;
+  max-width: 540px;
+  min-height: 300px;
+  max-height: 320px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 562px) {
+  section#franja-verde .container-green .content-img {
+    min-height: 200px;
+    max-height: 330px;
+  }
+}
+@media screen and (max-width: 400px) {
+  section#franja-verde .container-green .content-img {
+    min-height: 200px;
+    max-height: 222px;
+  }
+}
+section#franja-verde .container-green .enlaces {
+  margin-top: 60px;
+  max-width: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+section#franja-verde .container-green .enlaces strong {
+  font-family: "Space Grotesk";
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 21px;
+}
+section#franja-verde .container-green .enlaces li {
+  color: #000000;
+  font-size: 28px;
+  font-family: "Space Grotesk";
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media screen and (max-width: 800px) {
+  section#franja-verde .container-green .enlaces li {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  section#franja-verde .container-green .enlaces li span svg {
+    width: 26.315px;
+    height: 35.953px;
+  }
+}
+section#franja-verde .container-green .enlaces li a {
+  text-decoration-color: #bcff3b;
+  color: #000000;
 }
