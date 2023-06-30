@@ -1,0 +1,42 @@
+section#bg-franja-verde {
+  display: none;
+  @media screen and (max-width: 1100px) {
+    display: block;
+    background-color: @verder;
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    .container-verde {
+      max-width: 540px;
+      padding-left: @p_container;
+      padding-right: @p_container;
+      margin: auto;
+
+      & > .lista-informacion {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          color: #000000;
+          font-size: 28px;
+          font-family: "Space Grotesk";
+          font-weight: normal;
+          & > a {
+            text-decoration-color: black;
+            color: #000000;
+          }
+
+          span {
+            display: flex;
+          }
+        }
+
+        // li:nth-child(5) {
+        // }
+      }
+    }
+  }
+}
