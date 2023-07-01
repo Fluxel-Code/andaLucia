@@ -704,6 +704,9 @@ footer#footer > .container .footer-flex .column-big .flex {
   min-height: 171px;
   gap: 148px;
 }
+footer#footer > .container .footer-flex .column-big .flex .content-logo {
+  min-width: 171px;
+}
 footer#footer > .container .footer-flex .column-big .flex .item {
   height: 171px;
   background-repeat: no-repeat;
@@ -834,14 +837,14 @@ footer#footer > .container .movil-flex {
 footer#footer > .container .movil-flex .element {
   max-width: 600px;
   margin: auto;
-  height: 525px;
+  height: 400px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 @media screen and (max-width: 560px) {
   footer#footer > .container .movil-flex .element {
-    height: 430px;
+    height: 370px;
   }
 }
 footer#footer > .container .movil-flex .element .menu-movil {
@@ -859,16 +862,16 @@ footer#footer > .container .movil-flex .element .menu-movil {
 }
 footer#footer > .container .movil-flex .element .menu-movil li {
   text-align: center;
-  font-size: 55px;
+  font-size: 40px;
   font-weight: normal;
   font-family: "Space Grotesk";
   letter-spacing: 0px;
-  line-height: 75px;
+  line-height: 60px;
 }
 @media screen and (max-width: 560px) {
   footer#footer > .container .movil-flex .element .menu-movil li {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 50px;
   }
 }
 footer#footer > .container .movil-flex .element .menu-movil li a {
