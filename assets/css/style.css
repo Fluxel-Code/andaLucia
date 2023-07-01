@@ -1711,6 +1711,28 @@ section#slider-agency .container .swiper .swiper-wrapper .swiper-slide {
     width: 530px;
   }
 }
+section#slider-agency .container .swiper .swiper-button-prev::after {
+  content: "prev";
+  background-image: url(../img/agencia/arrow.svg) !important;
+  background-color: transparent;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+section#slider-agency .container .swiper .swiper-button-next::after {
+  content: "prev";
+  background-image: url(../img/agencia/arrow.svg) !important;
+  background-color: transparent;
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
 section#AND_shop {
   padding-top: 105px;
   padding-bottom: 67px;

@@ -23,6 +23,29 @@ section#slider-agency {
           }
         }
       }
+
+      .swiper-button-prev::after {
+        content: "prev";
+        background-image: url(../img/agencia/arrow.svg) !important;
+        background-color: transparent;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+
+      .swiper-button-next::after {
+        content: "prev";
+        background-image: url(../img/agencia/arrow.svg) !important;
+        background-color: transparent;
+        position: absolute;
+        transform: rotate(180deg);
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
     }
   }
 }
