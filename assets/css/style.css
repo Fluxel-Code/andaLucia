@@ -2408,7 +2408,7 @@ section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-boton
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
   gap: 17px;
   margin-bottom: 17px;
 }
@@ -2731,6 +2731,10 @@ section#paginacion_seccion .container ul.pagination li a.prev {
 }
 section#paginacion_seccion .container ul.pagination li a:hover {
   background-color: #bcff3b;
+}
+section#cabecera_archivo {
+  background-color: aqua;
+  height: 100vh;
 }
 section#AND_shop {
   padding-top: 105px;
