@@ -17,16 +17,20 @@ section#slider-agency {
         .swiper-slide {
           max-height: 335px;
           border-radius: 20px;
-          // border: 3px solid red;
           @media screen and (min-width: 700px) {
             width: 530px;
           }
         }
       }
 
+      .swiper-button-next {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+
       .swiper-button-prev::after {
         content: "prev";
-        background-image: url(../img/agencia/arrow.svg) !important;
         background-color: transparent;
         position: absolute;
         width: 100px;
@@ -37,7 +41,6 @@ section#slider-agency {
 
       .swiper-button-next::after {
         content: "prev";
-        background-image: url(../img/agencia/arrow.svg) !important;
         background-color: transparent;
         position: absolute;
         transform: rotate(180deg);
