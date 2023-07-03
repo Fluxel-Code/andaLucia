@@ -1,5 +1,5 @@
 section#proyecto_publico {
-  padding-top: 158px;
+  padding-top: 178px;
   padding-bottom: 50.69px;
   @media screen and (max-width: 800px) {
     padding-top: 60px;
@@ -33,19 +33,9 @@ section#proyecto_publico {
       }
 
       & > a {
-        position: relative;
-        text-decoration: none;
+        text-decoration: underline;
         color: black;
-      }
-
-      & > a::before {
-        content: "";
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        border-bottom: 2px solid black;
+        text-decoration-skip-ink: none;
       }
     }
 
@@ -77,7 +67,8 @@ section#proyecto_publico {
       font-weight: normal;
       font-family: "Space Grotesk";
       line-height: 34px;
-      text-decoration: none;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
     }
   }
 }

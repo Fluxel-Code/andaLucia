@@ -1,0 +1,172 @@
+section#cabecera_listado {
+  padding-top: 136px;
+  padding-bottom: 123px;
+  .container {
+    max-width: 1318px + (@p_container * 2);
+    margin: auto;
+    padding-left: @p_container;
+    padding-right: @p_container;
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      gap: 150px;
+      align-items: center;
+      @media screen and (max-width: 1100px) {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .titulo-and-btn {
+        display: flex;
+        flex-direction: column;
+        .titulo-explora-listado {
+          line-height: 123.6px;
+          font-family: "Space Grotesk";
+          font-size: 103px;
+          font-weight: 500;
+          text-align: start;
+          margin-top: 0;
+          margin-bottom: 20px;
+
+          @media screen and (max-width: 800px) {
+            font-size: 90px;
+          }
+          @media screen and (max-width: 752px) {
+            font-size: 70px;
+            margin-bottom: 0;
+            line-height: 70px;
+          }
+
+          @media screen and (max-width: 610px) {
+            font-size: 40px;
+          }
+
+          a {
+            color: black;
+            text-decoration: none;
+          }
+        }
+
+        // btn destokp
+        .btn-listado-destokp {
+          min-width: 162px;
+          max-width: 163px;
+          height: 42.55px;
+          border-radius: 15px;
+          background-color: white;
+          padding: 9px 13px;
+          transition: 0.5s all;
+          border: 0;
+          display: flex;
+          align-items: center;
+          gap: 10.5px;
+          @media screen and (max-width: 1100px) {
+            display: none;
+          }
+          @media screen and (max-width: 610px) {
+            height: 50px;
+          }
+          a {
+            display: block;
+            font-family: "Space Grotesk";
+            font-weight: bold;
+            font-size: 18px;
+            // font: normal normal bold 18px/36px Space Grotesk;
+            background-color: transparent;
+            width: 100%;
+            text-decoration: none;
+            display: block;
+            color: black;
+          }
+
+          &:hover {
+            border: 0;
+            background-color: black;
+            a {
+              color: white;
+            }
+
+            svg {
+              fill: white;
+              line {
+                stroke: black;
+              }
+            }
+          }
+        }
+      }
+
+      //   *movil
+      .btn-listado-movil {
+        min-width: 162px;
+        max-width: 163px;
+        height: 42.55px;
+        border-radius: 15px;
+        background-color: white;
+        padding: 9px 13px;
+        transition: 0.5s all;
+        border: 0;
+        align-items: center;
+        gap: 10.5px;
+        display: none;
+        @media screen and (max-width: 1100px) {
+          display: block;
+          display: flex;
+        }
+        @media screen and (max-width: 610px) {
+          height: 50px;
+        }
+        a {
+          display: block;
+          font-family: "Space Grotesk";
+          font-weight: bold;
+          font-size: 18px;
+          // font: normal normal bold 18px/36px Space Grotesk;
+          background-color: transparent;
+          width: 100%;
+          text-decoration: none;
+          display: block;
+          color: black;
+        }
+
+        &:hover {
+          border: 0;
+          background-color: black;
+          a {
+            color: white;
+          }
+
+          svg {
+            fill: white;
+            line {
+              stroke: black;
+            }
+          }
+        }
+      }
+
+      .informacion > p {
+        max-width: 761px;
+        font-size: 38px;
+        font-weight: lighter;
+        font-family: "Space Grotesk";
+        line-height: 45px;
+        margin: 0;
+        color: black;
+
+        @media screen and (max-width: 1100px) {
+          font-size: 28px;
+          line-height: 35px;
+        }
+        @media screen and (max-width: 800px) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+        @media screen and (max-width: 400px) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
