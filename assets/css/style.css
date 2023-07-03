@@ -613,7 +613,7 @@ section#home-proyect .container-proyect > .enlace-ver_todos {
   font-weight: normal;
   font-family: "Space Grotesk";
   line-height: 34px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 section#home-texto {
   padding-top: 70px;
@@ -2171,6 +2171,11 @@ section#cabecera_listado {
   padding-top: 136px;
   padding-bottom: 123px;
 }
+@media screen and (max-width: 1100px) {
+  section#cabecera_listado {
+    padding-bottom: 30px;
+  }
+}
 section#cabecera_listado .container {
   max-width: 1358px;
   margin: auto;
@@ -2371,14 +2376,123 @@ section#tabla_content .container {
   padding-left: 20px;
   padding-right: 20px;
 }
-section#tabla_content table {
+section#tabla_content .container .caja-flex-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 90px;
+}
+section#tabla_content .container .caja-flex-btns .cuadro-botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (max-width: 1100px) {
+  section#tabla_content .container .caja-flex-btns .cuadro-botones {
+    display: none;
+  }
+}
+section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-botones-categoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-botones-categoria > button {
+  max-width: 170px;
+  text-align: center;
+  height: 42.55px;
+  color: #7b6c6c;
+  border-radius: 10px;
+  background-color: black;
+  padding: 9px 13px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  border: 0;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 23px;
+  font-family: "Space Grotesk";
+  font-weight: normal;
+}
+section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-botones-categoria > button span {
+  margin-right: 10px;
+}
+section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-botones-categoria > button:hover {
+  background-color: #bcff3b;
+  color: #000000;
+}
+section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-ubicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-ubicacion > button {
+  max-width: 170px;
+  text-align: center;
+  height: 42.55px;
+  color: #7b6c6c;
+  border-radius: 10px;
+  background-color: #bcff3b;
+  padding: 9px 13px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  border: 0;
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 23px;
+  font-family: "Space Grotesk";
+  font-weight: normal;
+}
+section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-ubicacion > button span {
+  margin-right: 10px;
+}
+section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-ubicacion > button:hover {
+  background-color: black;
+  color: white;
+}
+section#tabla_content .container .caja-flex-btns .seleccion {
+  width: 100%;
+  border: 2px solid red;
+  min-height: 100px;
+}
+section#tabla_content .container table {
   border: 0;
 }
-section#tabla_content table tbody {
+section#tabla_content .container table tbody {
   width: 100%;
   display: block;
 }
-section#tabla_content table tr {
+section#tabla_content .container table tr {
   margin-bottom: 40px;
   width: 100%;
   display: -webkit-box;
@@ -2397,16 +2511,16 @@ section#tabla_content table tr {
   gap: 60px;
 }
 @media screen and (max-width: 1100px) {
-  section#tabla_content table tr {
+  section#tabla_content .container table tr {
     gap: 50px;
   }
 }
 @media screen and (max-width: 500px) {
-  section#tabla_content table tr {
-    gap: 20px;
+  section#tabla_content .container table tr {
+    gap: 10px;
   }
 }
-section#tabla_content table tr .iniciales {
+section#tabla_content .container table tr .iniciales {
   max-width: 80px;
   text-transform: uppercase;
   color: #c4c4c4;
@@ -2416,11 +2530,11 @@ section#tabla_content table tr .iniciales {
   font-weight: bold;
 }
 @media screen and (max-width: 500px) {
-  section#tabla_content table tr .iniciales {
+  section#tabla_content .container table tr .iniciales {
     font-size: 30px;
   }
 }
-section#tabla_content table tr .marcas {
+section#tabla_content .container table tr .marcas {
   text-align: left;
   font-size: 30px;
   font-family: "Space Grotesk";
@@ -2428,7 +2542,7 @@ section#tabla_content table tr .marcas {
   color: #000000;
 }
 @media screen and (max-width: 500px) {
-  section#tabla_content table tr .marcas {
+  section#tabla_content .container table tr .marcas {
     font-size: 18px;
     line-height: 22px;
     max-width: 130px;
@@ -2437,7 +2551,7 @@ section#tabla_content table tr .marcas {
     white-space: nowrap;
   }
 }
-section#tabla_content table tr .btns {
+section#tabla_content .container table tr .btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2448,11 +2562,11 @@ section#tabla_content table tr .btns {
   height: 80px;
 }
 @media screen and (max-width: 1100px) {
-  section#tabla_content table tr .btns {
+  section#tabla_content .container table tr .btns {
     display: none;
   }
 }
-section#tabla_content table tr .btns > button {
+section#tabla_content .container table tr .btns > button {
   max-width: 150px;
   text-align: center;
   height: 42.55px;
@@ -2476,10 +2590,10 @@ section#tabla_content table tr .btns > button {
   font-family: "Space Grotesk";
   font-weight: 500;
 }
-section#tabla_content table tr .btns > button:last-child {
+section#tabla_content .container table tr .btns > button:last-child {
   max-width: 46px;
 }
-section#tabla_content table tr .btn-agencia > button {
+section#tabla_content .container table tr .btn-agencia > button {
   text-transform: capitalize;
   min-width: 140px;
   text-align: center;
@@ -2505,10 +2619,112 @@ section#tabla_content table tr .btn-agencia > button {
   font-weight: 500;
 }
 @media screen and (max-width: 500px) {
-  section#tabla_content table tr .btn-agencia > button {
+  section#tabla_content .container table tr .btn-agencia > button {
     min-width: 100px;
     font-size: 18px;
   }
+}
+section#tabla_content .container > .enlace-ver_todos {
+  margin-top: 40px;
+  display: block;
+  font-size: 29px;
+  text-align: center;
+  color: #020202;
+  font-weight: normal;
+  font-family: "Space Grotesk";
+  line-height: 34px;
+  text-decoration: underline;
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  section#tabla_content .container > .enlace-ver_todos {
+    display: block;
+    margin-bottom: 150px;
+  }
+}
+section#paginacion_seccion {
+  padding-bottom: 150px;
+}
+@media screen and (max-width: 1000px) {
+  section#paginacion_seccion {
+    display: none;
+  }
+}
+section#paginacion_seccion .container {
+  max-width: 1358px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+section#paginacion_seccion .container ul.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section#paginacion_seccion .container ul.pagination .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+section#paginacion_seccion .container ul.pagination .flex li {
+  width: 34px;
+  height: 36px;
+  border-radius: 10px;
+  text-align: center;
+}
+section#paginacion_seccion .container ul.pagination .flex li a {
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+section#paginacion_seccion .container ul.pagination li a {
+  font-size: 24px;
+  color: black;
+  font-family: "Space Grotesk";
+  text-decoration: none;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+section#paginacion_seccion .container ul.pagination li a span {
+  display: block;
+  height: 27px;
+}
+section#paginacion_seccion .container ul.pagination li a.netx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+section#paginacion_seccion .container ul.pagination li a.netx span {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+section#paginacion_seccion .container ul.pagination li a.prev {
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+section#paginacion_seccion .container ul.pagination li a:hover {
+  background-color: #bcff3b;
 }
 section#AND_shop {
   padding-top: 105px;
