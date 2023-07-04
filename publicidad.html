@@ -337,27 +337,29 @@
 
     <!-- *Script [Tarifas] -->
     <script>
-      const removeClass = (nodoLista, active) => {
-        Array.from(nodoLista).forEach((item) => {
-          item.classList.remove(active);
+      (function () {
+        const removeClass = (nodoLista, active) => {
+          Array.from(nodoLista).forEach((item) => {
+            item.classList.remove(active);
+          });
+        };
+
+        const ListaNodos = document.querySelectorAll(
+          "#tarifas .lista-promocion > .elemento"
+        );
+
+        const arr = Array.from(ListaNodos);
+
+        arr.forEach((element) => {
+          element.addEventListener("click", (evento) => {
+            evento.preventDefault();
+
+            removeClass(ListaNodos, "active");
+
+            element.classList.add("active");
+          });
         });
-      };
-
-      const ListaNodos = document.querySelectorAll(
-        "#tarifas .lista-promocion > .elemento"
-      );
-
-      const arr = Array.from(ListaNodos);
-
-      arr.forEach((element) => {
-        element.addEventListener("click", (evento) => {
-          evento.preventDefault();
-
-          removeClass(ListaNodos, "active");
-
-          element.classList.add("active");
-        });
-      });
+      })();
     </script>
   </body>
 </html>

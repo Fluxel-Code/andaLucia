@@ -428,23 +428,25 @@
 
     <!-- *Scrip info-noticias[eventos] -->
     <script>
-      const removeClassList = (nodoList, clases) => {
-        Array.from(nodoList).forEach((elem) => {
-          elem.classList.remove(clases);
-        });
-      };
-      const itemLista = document.querySelectorAll(
-        "#home-eventos .info-noticias > .column-two .item"
-      );
-      const newArra = Array.from(itemLista);
+      (function () {
+        const removeClassList = (nodoList, clases) => {
+          Array.from(nodoList).forEach((elem) => {
+            elem.classList.remove(clases);
+          });
+        };
+        const itemLista = document.querySelectorAll(
+          "#home-eventos .info-noticias > .column-two .item"
+        );
+        const newArra = Array.from(itemLista);
 
-      newArra.forEach((element) => {
-        element.addEventListener("click", (e) => {
-          e.preventDefault();
-          removeClassList(itemLista, "active");
-          element.classList.add("active");
+        newArra.forEach((element) => {
+          element.addEventListener("click", (e) => {
+            e.preventDefault();
+            removeClassList(itemLista, "active");
+            element.classList.add("active");
+          });
         });
-      });
+      })();
     </script>
   </body>
 </html>

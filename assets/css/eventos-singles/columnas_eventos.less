@@ -32,6 +32,7 @@ section#columna_Superior {
           }
 
           .btnCardiz {
+            cursor: pointer;
             max-width: 130px;
             padding: 10px 30px;
             min-height: 42px;
@@ -251,9 +252,16 @@ section#columna_Superior {
         display: none;
       }
       a {
+        // &:hover {
+        //   background-color: @verder;
+        // }
+        padding: 10px;
+        min-width: 34px;
+        height: 50px;
+        border-radius: 10px;
         display: block;
         color: #000000;
-        font-size: 28px;
+        font-size: 24px;
         font-family: "Space Grotesk";
         font-weight: normal;
         text-decoration: none;
@@ -263,6 +271,10 @@ section#columna_Superior {
 
         span {
           display: flex;
+        }
+
+        &:active {
+          background-color: @verder;
         }
       }
     }

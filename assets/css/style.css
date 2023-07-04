@@ -196,6 +196,7 @@ section#home-eventos .container-event .header-evento .title-evento a {
   color: black;
 }
 section#home-eventos .container-event .header-evento .btn-evento {
+  cursor: pointer;
   min-width: 162px;
   height: 42.55px;
   border-radius: 15px;
@@ -453,6 +454,7 @@ section#home-explora .container-explora .header-explora .title-explora a {
   text-decoration: none;
 }
 section#home-explora .container-explora .header-explora .btn-explora {
+  cursor: pointer;
   min-width: 162px;
   height: 42.55px;
   border-radius: 15px;
@@ -1613,6 +1615,7 @@ section#superior-agency .container_agency .columns > .one .parrafo-movil p {
   }
 }
 section#superior-agency .container_agency .columns > .one .solicitar-btn-agency {
+  cursor: pointer;
   max-width: 450px;
   border: 1px solid black;
   padding: 10px 20px;
@@ -2141,6 +2144,7 @@ section#beigeDFA .contenedor-botones {
   }
 }
 section#beigeDFA .contenedor-botones > button {
+  cursor: pointer;
   min-width: 162px;
   height: 62.55px;
   border-radius: 10px;
@@ -2247,6 +2251,7 @@ section#cabecera_listado .container .header-flex .titulo-and-btn .titulo-explora
   text-decoration: none;
 }
 section#cabecera_listado .container .header-flex .titulo-and-btn .btn-listado-destokp {
+  cursor: pointer;
   min-width: 162px;
   max-width: 163px;
   height: 42.55px;
@@ -2413,6 +2418,7 @@ section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-boton
   margin-bottom: 17px;
 }
 section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-botones-categoria > button {
+  cursor: pointer;
   max-width: 170px;
   text-align: center;
   height: 42.55px;
@@ -2455,6 +2461,7 @@ section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-ubica
   margin-bottom: 17px;
 }
 section#tabla_content .container .caja-flex-btns .cuadro-botones .selecion-ubicacion > button {
+  cursor: pointer;
   max-width: 170px;
   text-align: center;
   height: 42.55px;
@@ -2701,6 +2708,7 @@ section#tabla_content .container table tr .btns {
   }
 }
 section#tabla_content .container table tr .btns > button {
+  cursor: pointer;
   max-width: 150px;
   text-align: center;
   height: 42.55px;
@@ -2728,6 +2736,7 @@ section#tabla_content .container table tr .btns > button:last-child {
   max-width: 46px;
 }
 section#tabla_content .container table tr .btn-agencia > button {
+  cursor: pointer;
   text-transform: capitalize;
   min-width: 140px;
   text-align: center;
@@ -2857,7 +2866,7 @@ section#paginacion_seccion .container ul.pagination li a.prev {
   display: flex;
   gap: 15px;
 }
-section#paginacion_seccion .container ul.pagination li a:hover {
+section#paginacion_seccion .container ul.pagination li a:active {
   background-color: #bcff3b;
 }
 section#cabecera_archivo {
@@ -2934,6 +2943,7 @@ section#cabecera_archivo .container .header-flex .titulo-and-btn .titulo-evento-
   text-decoration: none;
 }
 section#cabecera_archivo .container .header-flex .titulo-and-btn .btn-listado-destokp {
+  cursor: pointer;
   min-width: 162px;
   max-width: 163px;
   height: 42.55px;
@@ -3101,6 +3111,7 @@ section#grid_archivo .container .caja-flex-btns-archivo .cuadro-botones .selecio
   margin-bottom: 17px;
 }
 section#grid_archivo .container .caja-flex-btns-archivo .cuadro-botones .selecion-botones-categoria > button {
+  cursor: pointer;
   max-width: 170px;
   text-align: center;
   height: 42.55px;
@@ -3143,6 +3154,7 @@ section#grid_archivo .container .caja-flex-btns-archivo .cuadro-botones .selecio
   margin-bottom: 17px;
 }
 section#grid_archivo .container .caja-flex-btns-archivo .cuadro-botones .selecion-ubicacion > button {
+  cursor: pointer;
   max-width: 170px;
   text-align: center;
   height: 42.55px;
@@ -3428,6 +3440,7 @@ section#grid_archivo .container .grid .grid-item-big .contenido .superior .infor
   color: #000000;
 }
 section#grid_archivo .container .grid .grid-item-big .contenido .superior > button {
+  cursor: pointer;
   max-width: 170px;
   text-align: center;
   height: 42.55px;
@@ -3511,6 +3524,7 @@ section#grid_archivo .container .grid .grid-item > .content-img .contenedor-btns
           justify-content: space-between;
 }
 section#grid_archivo .container .grid .grid-item > .content-img .contenedor-btns > button {
+  cursor: pointer;
   margin: 0;
   max-width: 170px;
   text-align: center;
@@ -3641,7 +3655,7 @@ section#paginaccion_archivo .container ul.pagination li a.prev {
   display: flex;
   gap: 15px;
 }
-section#paginaccion_archivo .container ul.pagination li a:hover {
+section#paginaccion_archivo .container ul.pagination li a:active {
   background-color: #bcff3b;
 }
 section#AND_shop {
@@ -3719,6 +3733,13 @@ section#AND_shop .container .content-col .col.first .subtitulo {
   section#AND_shop .container .content-col .col.first .subtitulo {
     font-size: 35px;
     line-height: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section#AND_shop .container .content-col .col.first .subtitulo {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 80px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -4084,6 +4105,7 @@ nav#AND_Nav_menu .container .menu ul .content-link.only-desk .btn {
   -ms-flex-align: center;
   align-items: center;
   gap: 10.5px;
+  cursor: pointer;
 }
 @media screen and (max-width: 610px) {
   nav#AND_Nav_menu .container .menu ul .content-link.only-desk .btn {
@@ -4590,9 +4612,13 @@ section#columna_Superior .container-e .paginacion-flex {
   }
 }
 section#columna_Superior .container-e .paginacion-flex a {
+  padding: 10px;
+  min-width: 34px;
+  height: 50px;
+  border-radius: 10px;
   display: block;
   color: #000000;
-  font-size: 28px;
+  font-size: 24px;
   font-family: "Space Grotesk";
   font-weight: normal;
   text-decoration: none;
@@ -4608,6 +4634,9 @@ section#columna_Superior .container-e .paginacion-flex a span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+section#columna_Superior .container-e .paginacion-flex a:active {
+  background-color: #bcff3b;
 }
 section#bg-franja-verde {
   display: none;
