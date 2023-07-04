@@ -3093,6 +3093,30 @@ section#grid_archivo .container .grid > *:nth-child(8) {
   -ms-grid-row: 3;
   -ms-grid-column: 7;
 }
+@media screen and (max-width: 1250px) {
+  section#grid_archivo .container .grid {
+    -ms-grid-columns: 1fr 18px 1fr 18px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1100px) {
+  section#grid_archivo .container .grid {
+    -ms-grid-columns: 330px 18px 330px;
+    grid-template-columns: repeat(2, 330px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  section#grid_archivo .container .grid {
+    -ms-grid-columns: 340px;
+    grid-template-columns: repeat(1, 340px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 section#grid_archivo .container .grid .grid-item-big {
   padding: 20px;
   border-radius: 15px;
@@ -3103,7 +3127,13 @@ section#grid_archivo .container .grid .grid-item-big {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 400px;
   gap: 30px;
+}
+@media screen and (max-width: 1250px) {
+  section#grid_archivo .container .grid .grid-item-big {
+    display: none;
+  }
 }
 section#grid_archivo .container .grid .grid-item-big .content-img {
   background-color: #b3b2b288;
@@ -3190,6 +3220,7 @@ section#grid_archivo .container .grid .grid-item {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-height: 400px;
 }
 section#grid_archivo .container .grid .grid-item > .content-img {
   border-radius: 20px;
@@ -3198,6 +3229,11 @@ section#grid_archivo .container .grid .grid-item > .content-img {
   max-height: 256px;
   min-height: 255px;
   position: relative;
+}
+@media screen and (max-width: 1100px) {
+  section#grid_archivo .container .grid .grid-item > .content-img {
+    max-height: 400px;
+  }
 }
 section#grid_archivo .container .grid .grid-item > .content-img img {
   width: 100%;
@@ -3266,6 +3302,91 @@ section#grid_archivo .container .grid .grid-item > .contenido .fecha {
   font-family: "Space Grotesk";
   font-weight: normal;
   color: #000000;
+}
+section#grid_archivo .container > .enlace-ver_todos {
+  margin-top: 40px;
+  display: block;
+  font-size: 29px;
+  text-align: center;
+  color: #020202;
+  font-weight: normal;
+  font-family: "Space Grotesk";
+  line-height: 34px;
+  text-decoration: underline;
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  section#grid_archivo .container > .enlace-ver_todos {
+    display: block;
+    margin-bottom: 150px;
+  }
+}
+section#paginaccion_archivo {
+  padding-bottom: 150px;
+  margin-top: 100px;
+}
+@media screen and (max-width: 1000px) {
+  section#paginaccion_archivo {
+    display: none;
+  }
+}
+section#paginaccion_archivo .container {
+  max-width: 1358px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+section#paginaccion_archivo .container ul.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section#paginaccion_archivo .container ul.pagination li a {
+  font-size: 24px;
+  color: black;
+  font-family: "Space Grotesk";
+  text-decoration: none;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+section#paginaccion_archivo .container ul.pagination li a span {
+  display: block;
+  height: 27px;
+}
+section#paginaccion_archivo .container ul.pagination li a.netx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+section#paginaccion_archivo .container ul.pagination li a.netx span {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+section#paginaccion_archivo .container ul.pagination li a.prev {
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+section#paginaccion_archivo .container ul.pagination li a:hover {
+  background-color: #bcff3b;
 }
 section#AND_shop {
   padding-top: 105px;

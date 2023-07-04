@@ -1,2 +1,54 @@
 section#paginaccion_archivo {
+  padding-bottom: 150px;
+  margin-top: 100px;
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+  .container {
+    max-width: 1318px + (@p_container * 2);
+    margin: auto;
+    padding-left: @p_container;
+    padding-right: @p_container;
+    ul.pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        a {
+          font-size: 24px;
+          color: black;
+          font-family: "Space Grotesk";
+          text-decoration: none;
+          transition: 0.5s all;
+          span {
+            display: block;
+            height: 27px;
+          }
+
+          &.netx {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+            border-radius: 10px;
+            span {
+              transform: rotate(180deg);
+            }
+          }
+          &.prev {
+            padding: 10px;
+            border-radius: 10px;
+            align-items: center;
+            display: flex;
+            gap: 15px;
+          }
+
+          &:hover {
+            background-color: @verder;
+          }
+        }
+      }
+    }
+  }
 }
